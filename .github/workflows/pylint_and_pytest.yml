@@ -11,7 +11,10 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install pylint
-      - run: pylint $(git ls-files '*.py')
+      - name: Run pylint
+        env:
+          PYTHONPATH: src
+        run: pylint $(git ls-files '*.py')
 
   test:
     runs-on: ubuntu-latest
