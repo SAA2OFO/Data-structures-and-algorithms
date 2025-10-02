@@ -6,7 +6,9 @@
 """
 
 def main(): # pylint: disable=missing-function-docstring
-    print("Hello, world!")
+    rv = "Hello, world!"
+    print(rv)
+    return rv
 
 if __name__ == "__main__":
     main()
