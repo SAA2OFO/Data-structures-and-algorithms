@@ -5,9 +5,8 @@
     for demonstrating basic Python structure.
 """
 
-def main():
+def main(): # pylint: disable=missing-function-docstring
     print("Hello, world!")
 
 if __name__ == "__main__":
     main()
-
