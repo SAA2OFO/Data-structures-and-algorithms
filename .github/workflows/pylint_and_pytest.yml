@@ -29,3 +29,4 @@ jobs:
       - name: Run tests
         env:
           PYTHONPATH: src
+        run: pytest -vv --maxfail=1 --disable-warnings
